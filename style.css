@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+}
+
+body {
+  background: hsl(218, 23%, 16%);
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #52ffa8;
+}
+
+.mobileImg {
+  display: none;
+}
+
+.main-wrap {
+  background-color: hsl(217, 19%, 24%);
+  width: 540px;
+  height: 332px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 47px 48px 72px 48px;
+  border-radius: 15px;
+  position: relative;
+}
+
+h1 {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #52ffa8;
+}
+
+p {
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #cee3e9;
+  margin: 24px 0 40px;
+}
+
+button {
+  position: absolute;
+  bottom: -32px;
+  border: 0;
+  background: #52ffa8;
+  border-radius: 32px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 40px #52ffa8;
+}
+
+button:active {
+  -webkit-animation: spin 0.4s ease-in-out;
+  -moz-animation: spin 0.4s ease-in-out;
+  animation: spin 0.4s ease-in-out;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-wrap {
+    max-width: 342px;
+    max-height: 315px;
+    padding: 39px 19.67px 66.48px;
+  }
+
+  h1 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .mobileImg {
+    display: block;
+  }
+
+  .desktopImg {
+    display: none;
+  }
+
+  button:hover {
+    box-shadow: 0px 0px 0px #52ffa8;
+  }
+}
